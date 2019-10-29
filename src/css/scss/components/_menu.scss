@@ -1,0 +1,54 @@
+.menu {    
+    text-align: center;
+    display: none;
+
+	@media (min-width: 768px) {
+		display: flex;
+        justify-content: flex-end;
+	}	
+
+	@media (min-width: 992px) {
+		margin-right: 3rem;		
+	}	
+
+	&__link {
+		padding: .5rem .4rem;
+		color: $light-black;
+	    text-transform: uppercase;
+	    display: block;
+
+	    &::after {
+	    	content: '';
+	    	display: block;
+	    	height: 2px;
+	    	background-color: transparent;
+	    	transition: background-color .1s;
+	    };
+
+	    &:hover {
+			color: $black;
+
+			&::after {				
+		    	background-color: $black;
+		    };
+	    };
+
+	    @media(min-width: 800px) {
+	    	padding: .5rem .5rem;
+		}	  
+	}
+
+	&_is-open {
+		display: block;
+
+		@media( min-width: 768px ) {
+			display: flex;
+		}
+	}	
+
+	&_collapsing {
+		height: 0;
+		overflow: hidden;
+		transition: height .4s;
+	}
+}

@@ -1,0 +1,11 @@
+.article {	
+	&__title {
+		padding: .5rem 0 .2rem;
+		font-size: $heading-s;
+		font-weight: 600;
+	}
+
+	&__time {
+		color: $blue;
+	}
+}

@@ -1,0 +1,14 @@
+.carousel {
+	z-index: 1000;
+
+	&-control-prev, &-control-next {
+		width: 12%;    
+	    background-color: transparent;
+	    cursor: pointer;
+	    border: 0;
+	}
+
+	&-control-prev:focus, &-control-prev:hover, &-control-next:focus, &-control-next:hover {    
+	    background-color: rgba(255, 255, 255, .6);
+	}	
+}

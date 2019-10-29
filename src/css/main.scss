@@ -1,0 +1,31 @@
+/*Bootstrap*/
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/carousel";
+
+/*Utils*/
+
+@import "scss/utils/*";
+
+/*Base*/
+
+@import "scss/base/*";
+
+/*Components*/
+
+@import "scss/components/*";
+
+/*Layout*/
+
+@import "scss/layout/*";
+
+/*Pages*/
+
+@import "scss/pages/service-overview";
+@import "scss/pages/about-us";
+@import "scss/pages/our-team";
+@import "scss/pages/trusted-us";
+@import "scss/pages/bts-club";
