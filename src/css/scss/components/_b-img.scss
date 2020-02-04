@@ -6,13 +6,7 @@
 	&_logo {
 		background-size: 320px 190px;
 		width: 200px;
-	    height: 30px;
-
-	    @media(min-width: 850px) {	
-			background-size: auto;
-			width: 233px;
-		    height: 37px;	
-		}
+	    height: 30px;	   
 	} 
 
 	&_tesco {
@@ -71,13 +65,11 @@
 
 	&_centrum {
 		background-position: -76px -39px;
-	    width: 152px;
 	    height: 51px;
 	}
 
 	&_soundslike {
 		background-position: -193px -202px;
-	    width: 152px;
 	    height: 23px;
 	}
 
@@ -86,4 +78,18 @@
 	    width: 40px;
 	    height: 40px;
 	}
+
+	&_centrum, &_soundslike {
+		width: 152px;
+	}
+}
+
+@media(min-width: 992px) {	
+	.b-img {
+		&_logo {	    
+			background-size: auto;
+			width: 233px;
+		    height: 37px;	
+		}
+	} 
 }

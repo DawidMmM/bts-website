@@ -1,5 +1,5 @@
 .header {
-	padding: 1.4rem .3rem 0;	
+	padding: 1.4rem .5rem 0;
 	background-color: $white;
 	position: fixed;
     top: 0;
@@ -7,16 +7,13 @@
     left: 0;
     z-index: 1030;  
 
-    @media (min-width: 850px) {
-		padding: 1.4rem 1rem 0;
-	}	
-
 	&__logo {
 		position: absolute;
-		z-index: 1031; 	
+	}
+}
 
-		@media (min-width: 992px) {	
-			margin-left: 3rem;		
-		}	
+@media (min-width: 576px) {
+	.header {
+		padding: 1.4rem 0 0;
 	}
 }

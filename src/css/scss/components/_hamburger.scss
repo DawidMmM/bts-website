@@ -16,36 +16,38 @@
 	border-radius: .3rem;
 	line-height: 0;
 
-	@media (min-width: 768px) {
-		display: none;
-	}
-
 	&__box {
-	  width: 25px;
-	  height: 23px;
-	  display: inline-block;
-	  position: relative;
+	  	width: 25px;
+	  	height: 23px;
+	  	display: inline-block;
+	  	position: relative;
 	}	
 
-	.hamburger__inner {
+	&__inner {
 	  	@include hamburger-line;
 	  
 	  	top: 50%;
 	  	transform: translateY(-50%);
 	}
 
-	.hamburger__inner::before,
-	.hamburger__inner::after {
+	&__inner::before,
+	&__inner::after {
 	  @include hamburger-line;
 	  
 	  content: '';
 	} 
 
-	.hamburger__inner::before {
+	&__inner::before {
 	  top: -8px;
 	}
 
-	.hamburger__inner::after {
+	&__inner::after {
 	  top: 8px;
+	}
+}
+
+@media (min-width: 768px) {
+	.hamburger {
+		display: none;
 	}
 }

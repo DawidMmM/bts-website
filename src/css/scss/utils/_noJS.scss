@@ -1,20 +1,11 @@
 .no-js {	
 	body {
 		padding-top: 240px;
-
-		@media( min-width: 578px ) {
-			padding-top: 130px;		
-		}
 	}		
 
 	.menu {
     	flex-wrap: wrap;
     	justify-content: flex-end;
-
-    	@media( max-width: 768px ) {	
-			margin-top: 4rem;	
-			justify-content: center;
-		}
 
 		&__link {
 			padding: .6rem;
@@ -25,14 +16,14 @@
 		height: 410px;
 		overflow: scroll;    	
 
-		.carousel-item {
+		&-item {
 			margin-bottom: 10px;
 			height: auto;
 			float: none;			
 		}	
 
-		&-item__description, &-item__img {
-			height: 290px;			
+		.img {
+			height: 320px;			
 		}
 	}
 
@@ -42,5 +33,22 @@
 
 	.hamburger, .carousel-indicators, .carousel-control-prev, .carousel-control-next {
 		display: none;
+	}
+}
+
+@media( min-width: 578px ) {
+	.no-js {
+		body {
+			padding-top: 130px;
+		}
+	}
+}
+
+@media( max-width: 768px ) {
+	.no-js {
+		.menu {	
+			margin-top: 4rem;	
+			justify-content: center;
+		}
 	}
 }

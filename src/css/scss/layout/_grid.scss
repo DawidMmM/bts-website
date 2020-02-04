@@ -5,46 +5,44 @@
 
 .row {
 	@include make-row();
-
-	justify-content: center;
 }
 
-.column {
-	@include make-col-ready();	
-}
-
-.column_xs_6 {
+.col-xs-6 {
 	@include media-breakpoint-up(xs) {
 	    @include make-col(6);
 	}
 }
 
-.column_md_3 {
+.col-md-3 {
 	@include media-breakpoint-up(md) {
 	    @include make-col(3);
 	}
 }
 
-.column_lg_4 {
+.col-lg-4 {
 	@include media-breakpoint-up(lg) {
 	    @include make-col(4);
 	}
 }
 
-.column_lg_6 {
+.col-lg-6 {
 	@include media-breakpoint-up(lg) {
 	    @include make-col(6);
 	}
 }
 
-.column_lg_8 {
+.col-lg-8 {
 	@include media-breakpoint-up(lg) {
 	    @include make-col(8);
 	}
 }
 
-.column_lg_12 {
+.col-lg-12 {
 	@include media-breakpoint-up(lg) {
 	    @include make-col(12);
 	}
+}
+
+.col-xs-6, .col-md-3, .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12 {
+	@include make-col-ready();
 }

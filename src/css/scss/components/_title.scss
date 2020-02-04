@@ -1,12 +1,11 @@
 .title {
 	padding: 2.5rem;
-	font-size: $heading-m;
 	color: $black;
 	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
+}
 
-	@media(min-width: 767px) {		
-		font-size: $heading-l;		
+@media(min-width: 768px) {	
+	.title {
+		font-size: $text-xxl;
 	}
 }

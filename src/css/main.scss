@@ -6,6 +6,10 @@
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/carousel";
 
+/*Variables*/
+
+@import "scss/variables/*";
+
 /*Utils*/
 
 @import "scss/utils/*";
@@ -21,11 +25,3 @@
 /*Layout*/
 
 @import "scss/layout/*";
-
-/*Pages*/
-
-@import "scss/pages/service-overview";
-@import "scss/pages/about-us";
-@import "scss/pages/our-team";
-@import "scss/pages/trusted-us";
-@import "scss/pages/bts-club";
